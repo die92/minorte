@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: url(imagenes/paraquienes.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+/* barra navegacion */ 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+nav ul {
+    display: flex;
+    color:white;
+    list-style: none;
+    font-family:'Oswald', sans-serif;
+    font-size: 25px;
+}
+.nav-bar .lista ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.barrita{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+/* el hover de los enlaces  */
+.barrita:after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 4px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.barrita:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease-out;
+}
+/* titulo y subtitulo */
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.titulo h1{
+    font-size: 100px;
+    font-family: 'Irish Grover', cursiva;
+    color: rgb(231, 53, 9);
+}
+section .subtitulo h2{
+    font-family:'Edu NSW ACT Foundation', cursiva;
+}
+/* primer parrafo y foto */ 
+.disfrutes  {
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+}
+.parrafo-1 p{
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva ;
+    font-size: 25px;
+    text-align: left;
+    margin: 30px;
+}
+.imagen-1 img{
+    width: 25vw;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+/* segundo parrafo y combi  */
+.camionetas  {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40%;
+}
+.parrafo-2 p{
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva ;
+    font-size: 25px;
+    text-align: left;
+    margin: 30px;
+}
+.imagen-2 img{
+    width: 25vw;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}
+/* los guias */ 
+.guias  {
+    display: flex;
+    height: 40%;
+}
+.parrafo-3 p{
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva ;
+    font-size: 25px;
+    text-align: left;
+    margin: 30px;
+}
+.imagen-3 img{
+    width: 25vw;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}

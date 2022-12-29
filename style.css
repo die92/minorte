@@ -1,0 +1,689 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+
+    background-image: url(imagenes/iglesia.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+nav{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    color:white;
+    list-style: none;
+    font-family:'Oswald', sans-serif;
+    font-size: 25px;
+    
+}
+.nav-bar .lista ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.barrita{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+/* el hover de los enlaces  */
+.barrita:after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 4px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.barrita:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease-out;
+}
+/* el titulo principal */
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.inicio .titulos-izquierda h1{
+    font-family:'Oswald', sans-serif; 
+    color: white;
+    font-size: 90px;
+    text-align: left;
+    margin: 100px;
+}
+/* el h4 */
+.inicio .titulos-izquierda h4{
+    font-family:'Edu NSW ACT Foundation', cursiva;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+/* titulo mi norte */
+.mi-norte{
+    text-align: center;
+}
+.inicio h2{
+    font-size: 140px;
+    font-family: 'Irish Grover', cursiva;
+    color: rgb(231, 53, 9);
+}
+.inicio h3{
+    font-family:'Edu NSW ACT Foundation', cursiva ;
+    color: white;
+    font-size: 30px;
+}
+
+/* el despliegue */
+.desplegar {
+    background-color: rgba(0, 0, 0, 0.445);
+    border-style:ridge;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color: white;
+    font-family:'Oswald', sans-serif;  ;
+    font-style: oblique;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* el hover del despliegue */
+.desplegar:hover {
+    cursor: pointer;
+    color:red;
+    
+    transition: 0.5s;
+    border-color: red;
+}
+/* clase adicional para tarjetas */
+.desplegadas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+
+/* aca empiezan las tarjetas  */
+section {
+    display: none;
+    margin-bottom: 50px;
+    width: 100%;
+}
+section div {
+    margin-top: 70px;
+}
+/* tarjeta del hornocal */
+.tarjetas .tar-1{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-1 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-1 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-1 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+
+/* tarjeta del cerro 7 colores  */
+
+.tarjetas .tar-2{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-2 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-2 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-2 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+
+/* tarjeta del tren de las nubes */
+.tarjetas .tar-3{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-3 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-3 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-3 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+/* tarjeta de la quebrada de las señoritas  */
+.tarjetas .tar-4{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-4 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-4 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-4 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+/* tarjetas de cafayate */
+.tarjetas .tar-5{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-5 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-5 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-5 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+/* tarjetas de iruya */
+.tarjetas .tar-6{
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family: 'Oswald', sans-serif; 
+    color: white;
+    font-size: 25px;
+}
+.tarjetas .tar-6 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 20px;
+}
+.tarjetas .tar-6 h3{
+    margin-bottom: 10px;
+}
+.tarjetas .tar-6 p{
+    font-size: 20px;
+    font-family: 'Edu NSW ACT Foundation', cursiva;
+}
+
+/* nuestros clientes */
+.nuestros-clientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(-180deg, rgb(237, 22, 22), rgb(30, 13, 1));
+    border-radius: 30px;
+    margin-top: 50px;
+    opacity: 70%;
+}
+/* el hover de nuestros clientes */
+.nuestros-clientes:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.nuestros-clientes h2{
+    font-family:'Oswald', sans-serif; 
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.nuestros-clientes .primer-comentario {
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva; 
+    text-align: center;
+}
+.nuestros-clientes .segundo-comentario {
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva; 
+    text-align: center;
+    margin-top: 30px;
+}
+.nuestros-clientes .tercer-comentario {
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursiva; 
+    text-align: center;
+    margin-top: 30px;
+}
+/* el titulo de los comnetarios */
+.titulo-comentario{
+    color: white;
+    font-family:'Oswald', sans-serif;  ;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* aca empieza el formulario para comentarios  */
+.comentario-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background: linear-gradient(-180deg, rgb(237, 22, 22), rgb(30, 13, 1));
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    opacity: 80%;
+    text-align: left;
+}
+/* hover del formulario de los  comentarios */
+.comentario-cliente:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.comentario-cliente label {
+    position: relative;
+    right: 35%;
+    font-family:'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comentario-cliente .datos{
+    width: 90%;
+    border-radius: 10px;
+    border-style: none;
+}
+textarea{
+    resize: none;
+}
+.boton{
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    opacity: 80%;
+    margin: 10px;
+}
+.boton:hover{
+    color: red ;
+    opacity: 100%;
+    transition: 0.5s;
+}
+/* aca empieza el footer */
+.pie{
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+/* el de instagram */
+.instagram{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+.instagram p{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+.instagram img{
+    width: 5%;
+}
+/* el de facebook */
+.face{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+.face p{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+.face img{
+    width: 5%;
+}
+/* el de gmail */
+.gmail{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+.gmail p{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+.gmail img{
+    width: 5%
+} 
+/* el nombre de la empresa del footer */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.nosotros h2{
+    font-size: 90px;
+    font-family: 'Irish Grover', cursiva;
+    color: rgb(231, 53, 9);
+}
+.nosotros h3{
+    font-family:'Edu NSW ACT Foundation', cursiva;
+    color: white;
+    font-size: 30px;
+}
+.nosotros a {
+    text-decoration: none;
+    color: rgb(231, 53, 9);
+}
+
+/* diseño adaptativo */
+
+@media (max-width: 800px) {
+    .pie{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .inicio .titulos-izquierda h1{
+        font-family:'Oswald', sans-serif; 
+        color: white;
+        font-size: 90px;
+        text-align: left;
+    } 
+    .comentario-cliente{
+        width: 55%;
+    }
+}
+@media (max-width: 768px){
+    
+    /* los titulos del inicio */
+    .inicio{
+        display: grid;
+        grid-template-columns:100%;
+        
+    }
+    .inicio .titulos-izquierda h1{
+        text-align: center;
+    }
+    .inicio h2{
+        font-size: 100px;
+    }
+    .inicio h3{
+        margin-bottom: 30px;
+    }
+    .inicio .titulos-izquierda h4{
+        margin-bottom: 20px;
+    }
+    /* el despliegue de las tarjetas  */
+    .desplegar{
+        font-size: 40px;
+    }
+    .desplegadas{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        margin: 20px ;
+    }
+    .tarjetas .tar-1{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-1 img{
+        width: 35vw;
+        
+    }
+    .tarjetas .tar-2{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-2 img{
+        width: 35vw;
+        
+    }
+    .tarjetas .tar-3{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-3 img{
+        width: 35vw;
+    }
+    .tarjetas .tar-4{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-4 img{
+        width: 35vw;
+    }
+    .tarjetas .tar-5{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-5 img{
+        width: 35vw;
+        
+    }
+    .tarjetas .tar-6{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .tar-6 img{
+        width: 35vw;
+    }
+    /* el footer */
+    .pie{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 70px;
+    }
+    .redes{
+        position: relative;
+        left: 20%;
+    }
+    
+    .instagram p{
+        font-size: 15px;
+    }
+    .face p{
+        font-size: 15px;
+    }
+    .gmail p{
+        font-size: 15px;
+    }
+    .nosotros h2{
+        font-size: 60px;
+    }
+    
+    /* los input del formulario */
+    .comentario-cliente{
+        width: 55%;
+    }
+    /* titulos del formulario */
+    .titulo-comentario{
+        font-size: 40px;
+    }
+    .nuestros-clientes h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+}
+@media (max-width: 490px){
+    /* las tarjetas */
+    .desplegadas{
+        display: grid;
+        grid-template-columns: 95vw;
+        margin: 20px ;
+    }
+    .tarjetas .tar-1{
+        width: 90vw;
+    }
+    .tarjetas .tar-1 img{
+        width: 80%;
+        height: auto;
+    }
+    .tarjetas .tar-2{
+        width: 90vw;
+    }
+    .tarjetas .tar-2 img{
+        width: 80%;
+        height: auto;
+    }
+    .tarjetas .tar-3{
+        width: 90vw;
+    }
+    .tarjetas .tar-3 img{
+        width: 80%;
+        height: auto;
+    }
+    .tarjetas .tar-4{
+        width: 90vw;
+    }
+    .tarjetas .tar-4 img{
+        width: 80%;
+        height: auto;
+    }
+    .tarjetas .tar-5{
+        width: 90vw;
+    }
+    .tarjetas .tar-5 img{
+        width: 80%;
+        height: auto;
+    }
+    .tarjetas .tar-6{
+        width: 90vw;
+    }
+    .tarjetas .tar-6 img{
+        width: 80%;
+        height: auto;
+    }
+    /* los comentarios del cliente  */
+    .comentario-cliente{
+        width: 60%;
+    }
+    .inicio .titulos-izquierda h1{
+        text-align: center;
+        font-size: 50px;
+        margin: 50px;
+    }
+    
+    /* el footer */
+    
+    }
+    .pie .redes{
+        margin: 20px;
+        position: relative;
+        
+        
+
+}
+
+
+
+
+
+
+
