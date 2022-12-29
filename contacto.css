@@ -125,3 +125,46 @@ textarea{
     opacity: 100%;
     transition: 0.5s;
 }
+/* diseño adaptativo */
+
+@media (max-width: 768px){
+    /* esta es la barra de navegacion */
+    .nav-bar .lista ul li{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 20px;
+    }
+    /* estos son los titulos de la cabezera */
+    .titulo h1{
+        font-size: 70px;
+    }
+    .subtitulo h2{
+        font-size: 20px;
+    }
+    .titulo-comentario{
+        font-size: 40px;
+    }
+    /* este es el formulario  */
+    .comentario-cliente{
+        width: 50%;
+    }
+}
+@media (max-width: 480px){
+    /* esta es la barra de navegacion */
+    .nav-bar .lista ul li{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    /* el titulo del formulario */
+    .titulo-comentario{
+        font-size: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* este es el formulario  */
+    .comentario-cliente{
+        width: 70%;
+    }
+}
