@@ -429,16 +429,16 @@ section div {
     /* las tarjetas */
     .desplegadas{
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 95%;
         margin-top: 10px;
     }
     .tarjetas .excur{
-        width: 85%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 10px;
     }
     .tarjetas .excur img{
-        width: 80%;
+        width: 85%;
         
     }
     

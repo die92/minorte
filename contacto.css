@@ -86,7 +86,7 @@ section .subtitulo h2{
     border-radius: 20px;
     opacity: 80%;
     text-align: left;
-    height: 65vh;
+    height: 60vh;
     
 }
 /* hover del formulario de los  comentarios */
@@ -169,6 +169,6 @@ textarea{
 
     /* este es el formulario  */
     .comentario-cliente{
-        width: 70%;
+        width: 80%;
     }
 }
