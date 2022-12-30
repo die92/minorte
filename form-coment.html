@@ -1,3 +1,12 @@
+
+
+
+
+<!-- aca va la consulta a la base de datos para enviar los comentarios de los cliente a la base  -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +32,11 @@
     <h2 class="titulo-comentario">Queremos saber que opinas de nosotros </h2>
     <form action="" class="comentario-cliente" method="post">
         <label for="nombre">Nombre</label>
-        <input type="text"  class="datos" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        <input type="text" required class="datos" name="nombre" id="nombre" placeholder="Ingrese su nombre">
         <label for="localidad">Localidad</label>
-        <input type="text" class="datos" name="localidad" id="localidad" placeholder="Ingrese su localidad">
+        <input type="text" required class="datos" name="localidad" id="localidad" placeholder="Ingrese su localidad">
         <label for="comentario">Comentario</label>
-        <textarea class="datos" name="comentario" id="comentario" cols="20" rows="5" placeholder="dejanos tu comentario"></textarea>
+        <textarea class="datos" required name="comentario" id="comentario" cols="20" rows="5" placeholder="dejanos tu comentario"></textarea>
         <input type="submit" class="boton">
     </form>
     <div class="volver">

@@ -86,6 +86,7 @@ section .subtitulo h2{
     border-radius: 20px;
     opacity: 80%;
     text-align: left;
+    height: 65vh;
     
 }
 /* hover del formulario de los  comentarios */
@@ -100,16 +101,19 @@ section .subtitulo h2{
     font-size: 20px;
     font-weight: bold;
 }
-.comentario-cliente .datos {
+input {
     width: 90%;
     border-radius: 10px;
-    height: 5vh;
+    height: 12vh;
     border-style: none;
 }
 
 textarea{
-   resize: none;
-    height: 20vh;
+    resize: none;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+
 }
 
 .boton{

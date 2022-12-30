@@ -1,7 +1,7 @@
 
 
 
-<!-- aca va la consulta a la base de datos  -->
+<!-- aca va la consulta a la base de datos para guardar los datos de los posibles clientes -->
 
 
 
@@ -44,15 +44,15 @@
         Enseguida nos pondremos en contacto</h2>
         <form action="" class="comentario-cliente" method="post">
             <label for="nombre">Nombre</label>
-            <input type="text"  class="datos" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            <input type="text"  required class="datos" name="nombre" id="nombre" placeholder="Ingrese su nombre">
             <label for="apellido">Apellido</label>
-            <input type="text"  class="datos" name="apellido" id="nombre" placeholder="Ingrese su apellido">
+            <input type="text" required class="datos" name="apellido" id="nombre" placeholder="Ingrese su apellido">
             <label for="localidad">Localidad</label>
-            <input type="text" class="datos" name="localidad" id="localidad" placeholder="Ingrese su localidad">
+            <input type="text" required class="datos" name="localidad" id="localidad" placeholder="Ingrese su localidad">
             <label for="correo">Correo</label>
-            <input type="email"  class="datos" name="correo" id="nombre" placeholder="Ingrese su correo">
+            <input type="email" required class="datos" name="correo" id="nombre" placeholder="Ingrese su correo">
             <label for="excurcion">Excurcion</label>
-            <textarea class="datos" name="excurcion" id="comentario" cols="20" rows="5" placeholder="que excurcion te interesa , contanos"></textarea>
+            <textarea class="datos" required name="excurcion" id="comentario" cols="20" rows="5" placeholder="que excurcion te interesa , contanos"></textarea>
             <input type="submit" class="boton">
         </form>
     
