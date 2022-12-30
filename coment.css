@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: url(imagenes/paraquienes.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+/* los titulos  */
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.titulo h1{
+    font-size: 100px;
+    font-family: 'Irish Grover', cursiva;
+    color: rgb(231, 53, 9);
+}
+.subtitulo h2{
+    font-family:'Edu NSW ACT Foundation', cursiva;
+    font-size: 30px;
+}
+.titulo-comentario{
+        font-family:'Edu NSW ACT Foundation', cursiva;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 80px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+/* el formulario */
+.comentario-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background: linear-gradient(-180deg, rgb(237, 22, 22), rgb(30, 13, 1));
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    opacity: 80%;
+    text-align: left;
+    height: 60vh;
+}
+/* hover del formulario de los  comentarios */
+.comentario-cliente:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+.comentario-cliente label {
+    position: relative;
+    right: 35%;
+    font-family:'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comentario-cliente .datos{
+    width: 90%;
+    border-radius: 10px;
+    border-style: none;
+}
+input{
+    height: 5vh;
+    border-style: none;
+    
+}
+textarea{
+    resize: none;
+    height: 50%;
+}
+.boton{
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    opacity: 80%;
+    margin: 10px;
+}
+.boton:hover{
+    color: red ;
+    opacity: 100%;
+    transition: 0.5s;
+}
+.volver {
+    width: 15%;
+    background-color: red;
+    text-align: center;
+    margin: 15px;
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.volver a{
+    text-decoration: none;
+    color: white;
+}
+/* diseño adaptativo */
+@media(max-width:800px){
+    .comentario-cliente{
+        width: 60%;
+    }
+}
+@media(max-width:480px){
+    .comentario-cliente{
+        width: 75%;
+    }
+    .titulo h1{
+        font-size: 70px;
+    }
+    .titulo-comentario{
+        font-size: 40px;
+    }
+
+    .volver {
+        font-size: 20px;
+    }    
+}
