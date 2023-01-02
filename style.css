@@ -27,8 +27,8 @@ nav ul {
     
 }
 .nav-bar .lista ul li{
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
 }
 .barrita{
@@ -95,26 +95,48 @@ nav ul {
 .desplegar {
     background-color: rgba(0, 0, 0, 0.445);
     border-style:ridge;
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
     color: white;
-    font-family:'Oswald', sans-serif;  ;
-    font-style: oblique;
-    font-size: 60px;
+    font-family:  'Roboto', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
     margin-bottom: 30px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+.desplegar.desplegar-1::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        position: absolute;    /* para que  el color rojo tapae todo y se desborde */
+        z-index: 1;
+        left: -101%;
+        border-radius: 10px;
+        transition: .3s ease-in-out all;
+}
+.desplegar span{
+    position:relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.desplegar.desplegar-1:hover::after{
+    left: 0%;
+}
+
 /* el hover del despliegue */
-.desplegar:hover {
+/* .desplegar:hover {
     cursor: pointer;
     color:red;
     transition: 0.5s;
     border-color: red;
-}
+} */
 /* clase adicional para tarjetas */
 .desplegadas{
     display: grid;
@@ -178,7 +200,7 @@ section div {
 .nuestros-clientes h2{
     font-family:'Oswald', sans-serif; 
     color: white;
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
@@ -205,112 +227,71 @@ section div {
     font-size: 25px;
 }
 /* el titulo de los comnetarios */
-.titulo-comentario{
+.titulo-comentario {
     color: white;
-    font-family:'Oswald', sans-serif;  ;
     text-align: center;
-    font-size: 60px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding: 25px 0px;
+    font-family:'Oswald', sans-serif ;
+    font-size: 30px;
 }
-/* el enlace para el formulario de comentarios */
-.enlace-coment a{
-    text-decoration: none;
-    color: white;
+/* el enlace de los comentarios  */
+.enlace-coment{
     background-color: rgba(0, 0, 0, 0.445);
     border-style:ridge;
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    font-family:'Oswald', sans-serif;  ;
-    font-style: oblique;
-    font-size: 60px;
+    width: 40%;
+    color: white;
+    font-family:  'Roboto', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
     margin: 0 auto;
-    margin-bottom: 130px;
-    margin-top: 60px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
-/* el hover del enlace */
-.enlace-coment a:hover {
-    cursor: pointer;
-    color:red;
-    transition: 0.5s;
-    border-color: red;
+.coment-1 a{
+    text-decoration: none;
+    color: white;
+}
+.enlace-coment.coment-1::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        position: absolute;    /* para que  el color rojo tapae todo y se desborde */
+        z-index: 1;
+        left: -101%;
+        border-radius: 10px;
+        transition: .3s ease-in-out all;
+}
+.enlace-coment span{
+    position:relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.enlace-coment.coment-1:hover::after{
+    left: 0%;
 }
 
-/* aca empieza el footer */
-.pie{
-    background-color: rgba(0, 0, 0, 0.411);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
-    
-}
 
-.redes{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-/* el de instagram */
-.instagram{
-    display: flex;
-    justify-content: start;
-    margin: 10px;
-}
-.instagram p{
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    font-size: 25px;
-    margin: 5px;
-}
-.instagram img{
-    width: 5%;
-}
-/* el de facebook */
-.face{
-    display: flex;
-    justify-content: start;
-    margin: 10px;
-}
-.face p{
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    font-size: 25px;
-    margin: 5px;
-}
-.face img{
-    width: 5%;
-}
-/* el de gmail */
-.gmail{
-    display: flex;
-    justify-content: start;
-    margin: 10px;
-}
-.gmail p{
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    font-size: 25px;
-    margin: 5px;
-}
-.gmail img{
-    width: 5%
-} 
-/* el nombre de la empresa del footer */
+
+
+
+
+
+/* el nombre de la empresa previo al footer */
 .nosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
-.nosotros h2{
+.nosotros h2 {
     font-size: 90px;
     font-family: 'Irish Grover', cursiva;
     color: rgb(231, 53, 9);
@@ -323,6 +304,33 @@ section div {
 .nosotros a {
     text-decoration: none;
     color: rgb(231, 53, 9);
+} 
+/* aca va el footer */
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 100%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.24)
+    
+}    
+.icon p{
+    color: white;
+    font-size: 20px;
+    text-align:start;
+    position: relative;
+    top: 5px;
+
+}
+.icon img{
+    width: 10%;
 }
 
 /* diseño adaptativo */
@@ -334,8 +342,18 @@ section div {
         font-size: 90px;
         text-align: left;
     } 
+    /* boton para ver las excurciones  */
+    .desplegar{
+        width: 60%;
+        font-size: 20px;
+    }
     .comentario-cliente{
         width: 55%;
+    }
+    /* boton comentario cliente  */
+    .enlace-coment{
+        width: 60%;
+        font-size: 20px;
     }
 }
 @media (max-width: 768px){
@@ -363,13 +381,21 @@ section div {
     }
     /* el despliegue de las tarjetas  */
     .desplegar{
-        font-size: 40px;
+        font-size: 20px;
+        width: 70%;
     }
     .desplegadas{
         display: grid;
         grid-template-columns: 50vw 50vw;
         margin: 20px ;
     }
+    .tarjetas::after{
+        opacity: 50%;
+    }
+    .tarjetas::before{
+        opacity: 100%;
+    }
+
     .tarjetas .excur{
         width: 45vw;
         font-size: 20px;
@@ -378,39 +404,24 @@ section div {
     .tarjetas .excur img{
         width: 35vw;
     }
-    /* el enlace para los cometarios */
-    .enlace-coment a{
-        font-size: 40px;
+    /* el titulo del boton */ 
+    .titulo-comentario{
+        font-size:20px;
     }
-    
+    /* boton comentario cliente  */
+    .enlace-coment{
+        width: 60%;
+        font-size: 20px;
+    }
     /* el footer */
-    .pie{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        margin-top: 70px;
-    }
-    .redes{
-        position: absolute;
-        left: 20%;
-    }
-    .nosotros{
-        margin-top: 190px;
-    }
-    
-    .instagram p{
-        font-size: 15px;
-    }
-    .face p{
-        font-size: 15px;
-    }
-    .gmail p{
-        font-size: 15px;
-    }
     .nosotros h2{
-        font-size: 60px;
+        font-size: 45px;
+        
     }
-    
+    .icon p{
+        font-size: 15px;
+        }
+    }
     /* los input del formulario */
     .comentario-cliente{
         width: 55%;
@@ -424,8 +435,13 @@ section div {
         margin-bottom: 40px;
     }
 
-}
+
 @media (max-width: 490px){
+    /* el boton par las tarjetas  */
+    .desplegar{
+        font-size: 15px;
+        width: 75%;
+    }
     /* las tarjetas */
     .desplegadas{
         display: grid;
@@ -451,12 +467,29 @@ section div {
         font-size: 50px;
         margin: 50px;
     }
-    
-    /* el footer */
-    .pie .nosotros{
-        margin-top: 180px;
+    /* el titulo del boton  */
+    .titulo-comentario{
+        font-size: 20px;
+        
+    }
+    /* boton comentario cliente  */
+    .enlace-coment{
+        width: 75%;
+        font-size: 15px;
     }
     
+    /* el footer */
+    .redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.24);
+        width: 100%;
+    }
+    .icon img{
+        width: 5%;
+    }
 }
 
 
