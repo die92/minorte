@@ -11,8 +11,8 @@ body{
     background-attachment:fixed;
     background-position: center;
 }
+/* barra de navegacion  */
 nav{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ nav ul {
     display: inline-block;
     position: relative;
 }
-/* el hover de los enlaces  */
+/* el hover de los enlaces de la barra */
 .barrita:after{
     content: '';
     position: absolute;
@@ -59,7 +59,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .inicio .titulos-izquierda h1{
     font-family:'Oswald', sans-serif; 
@@ -91,7 +90,7 @@ nav ul {
     font-size: 30px;
 }
 
-/* el despliegue */
+/* el despliegue de las excursiones*/
 .desplegar {
     background-color: rgba(0, 0, 0, 0.445);
     border-style:ridge;
@@ -130,26 +129,20 @@ nav ul {
     left: 0%;
 }
 
-/* el hover del despliegue */
-/* .desplegar:hover {
-    cursor: pointer;
-    color:red;
-    transition: 0.5s;
-    border-color: red;
-} */
-/* clase adicional para tarjetas */
+
+/* clase adicional para js de las tarjetas */
 .desplegadas{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    
-}
+} 
 
-/* aca empiezan las tarjetas  */
-section {
+ /* aca empiezan las tarjetas  */
+section{
     display: none;
     margin-bottom: 50px;
     width: 100%;
-}
+    transition: 0.5s;
+}  
 section div {
     margin-top: 70px;
 }
@@ -277,12 +270,6 @@ section div {
     left: 0%;
 }
 
-
-
-
-
-
-
 /* el nombre de la empresa previo al footer */
 .nosotros{
     display: flex;
@@ -306,7 +293,6 @@ section div {
     color: rgb(231, 53, 9);
 } 
 /* aca va el footer */
-
 .redes{
     display: flex;
     justify-content: center;
@@ -332,10 +318,8 @@ section div {
 .icon img{
     width: 10%;
 }
-
 /* diseño adaptativo */
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .inicio .titulos-izquierda h1{
         font-family:'Oswald', sans-serif; 
         color: white;
@@ -354,6 +338,20 @@ section div {
     .enlace-coment{
         width: 60%;
         font-size: 20px;
+    }
+    /* las tarjetas */
+    .desplegadas{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        margin: 20px ;
+    }
+    .tarjetas .excur{
+        width: 45vw;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .tarjetas .excur img{
+        width: 35vw;
     }
 }
 @media (max-width: 768px){
@@ -386,23 +384,16 @@ section div {
     }
     .desplegadas{
         display: grid;
-        grid-template-columns: 50vw 50vw;
-        margin: 20px ;
+        grid-template-columns: 95%;
+        margin-top: 10px;
     }
-    .tarjetas::after{
-        opacity: 50%;
-    }
-    .tarjetas::before{
-        opacity: 100%;
-    }
-
     .tarjetas .excur{
-        width: 45vw;
-        font-size: 20px;
-        margin-bottom: 5px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
     }
     .tarjetas .excur img{
-        width: 35vw;
+        width: 70%;
     }
     /* el titulo del boton */ 
     .titulo-comentario{
@@ -416,12 +407,10 @@ section div {
     /* el footer */
     .nosotros h2{
         font-size: 45px;
-        
     }
     .icon p{
         font-size: 15px;
         }
-    }
     /* los input del formulario */
     .comentario-cliente{
         width: 55%;
@@ -434,8 +423,7 @@ section div {
         font-size: 40px;
         margin-bottom: 40px;
     }
-
-
+}
 @media (max-width: 490px){
     /* el boton par las tarjetas  */
     .desplegar{
@@ -454,10 +442,8 @@ section div {
         margin-top: 10px;
     }
     .tarjetas .excur img{
-        width: 85%;
-        
+        width: 80%;
     }
-    
     /* los comentarios del cliente  */
     .comentario-cliente{
         width: 65%;
@@ -470,14 +456,12 @@ section div {
     /* el titulo del boton  */
     .titulo-comentario{
         font-size: 20px;
-        
     }
     /* boton comentario cliente  */
     .enlace-coment{
         width: 75%;
         font-size: 15px;
     }
-    
     /* el footer */
     .redes{
         display: flex;

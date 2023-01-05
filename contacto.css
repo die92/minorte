@@ -11,6 +11,7 @@ body{
     background-attachment:fixed;
     background-position: center;
 }
+/* barra de navegacion  */
 nav ul {
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@ nav ul {
     display: inline-block;
     position: relative;
 }
-/* el hover de los enlaces  */
+/* el hover de los enlaces de la barra de navegacion */
 .barrita:after{
     content: '';
     position: absolute;
@@ -87,7 +88,6 @@ section .subtitulo h2{
     opacity: 80%;
     text-align: left;
     height: 60vh;
-    
 }
 /* hover del formulario de los  comentarios */
 .comentario-cliente:hover{
@@ -98,29 +98,22 @@ section .subtitulo h2{
     position: relative;
     right: 35%;
     font-family:'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 input {
     width: 90%;
     border-radius: 10px;
-    height: 12vh;
+    height: 6vh;
     border-style: none;
 }
 
-textarea{
-    resize: none;
-    height: 50%;
-    width: 90%;
-    border-radius: 10px;
-
-}
-
 .boton{
-    width: 30%;
+    width: 35%;
     margin: 5px;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
+    font-size: 15px;
     opacity: 80%;
     margin: 15px;
 }
@@ -166,7 +159,6 @@ textarea{
         margin-left: 20px;
         margin-right: 20px;
     }
-
     /* este es el formulario  */
     .comentario-cliente{
         width: 80%;
